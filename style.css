@@ -120,3 +120,8 @@
 
 
 /* responsive media query starts*/
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
