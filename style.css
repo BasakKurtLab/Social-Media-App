@@ -121,7 +121,14 @@
 
 /* responsive media query starts*/
 @media (max-width: 1300px) {
-  .home .max-width {
-    margin-left: 0px;
+ 
+}
+@media (max-width: 1104px) {
+ 
+}
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
   }
 }
+
