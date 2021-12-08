@@ -84,14 +84,14 @@
   list-style: none;
   display: inline-block;
 }
-.navbar .menu li .image, main .groups .image {
+.navbar .menu li .image, main .groups .image, main .middle .post .image {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 1px solid var(--c3);
   overflow: hidden;
 }
-.navbar .menu li .image img, main .groups .image img {
+.navbar .menu li .image img, main .groups .image img, main .middle .post .image img {
   width: 100%;
   object-fit: cover;
 }
@@ -182,11 +182,11 @@ main .left .menu-left a:hover {
 main .left .menu-left a:hover span {
   color: rgb(97, 95, 95);
 }
-main .f-groups .title{
+main .f-groups .title, main .post .title{
   position: relative;
   
 }
-main .f-groups .title::before {
+main .f-groups .title::before  {
   content: "";
   width: 100%;
   height: 1px;
@@ -214,14 +214,28 @@ main .groups a{
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2em;
   transition: color 0.3s ease;
-  
-  
-
-}
+ }
 main .groups a span{
   margin-left: 10px;
 }
+/******* section middle *****/
+main .middle .post .image{
+position: absolute;
+}
+main .middle .post .post-text{
+position: relative;
 
+}
+
+main .post .title::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #6663633d;
+  position: absolute;
+  top:40px;
+  left:0;
+}
 
 /* responsive media query starts*/
 @media (max-width: 1300px) {
