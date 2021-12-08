@@ -13,7 +13,7 @@
   --c4: #a0b08c; /*icon main*/
   --c5: #ffffff; /*main bg color*/
   --c6: #bdbdbd; /*main title*/
-  --c7: #fdfdfd; /*body background color*/
+  --c7: #eef7e6fd; /*body background color*/
   --c8: #f3f6f0; /*main a:hover*/
 }
 .max-width {
@@ -84,14 +84,18 @@
   list-style: none;
   display: inline-block;
 }
-.navbar .menu li .image, main .groups .image, main .middle .post .image {
+.navbar .menu li .image,
+main .groups .image,
+main .middle .post .image {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 1px solid var(--c3);
   overflow: hidden;
 }
-.navbar .menu li .image img, main .groups .image img, main .middle .post .image img {
+.navbar .menu li .image img,
+main .groups .image img,
+main .middle .post .image img {
   width: 100%;
   object-fit: cover;
 }
@@ -119,7 +123,7 @@
 /*****main styling*********/
 main {
   background-color: var(--c7);
-  padding: 30px 0;
+  padding: 18px 0;
 }
 main .max-width {
   display: flex;
@@ -161,9 +165,8 @@ main .left .menu-left {
 main .left .menu-left a {
   display: block;
   color: var(--c6);
-
   font-family: "Ubuntu", sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   transition: color 0.3s ease;
   padding: 12px 25px;
 }
@@ -173,69 +176,109 @@ main .left .menu-left a i {
   width: 20px;
   margin-right: 15px;
 }
-main .left .menu-left a span {
-  font-size: 1.2em;
-}
+
 main .left .menu-left a:hover {
   background-color: var(--c8);
 }
 main .left .menu-left a:hover span {
   color: rgb(97, 95, 95);
 }
-main .f-groups .title, main .post .title{
+main .f-groups .title,
+main .post .title {
   position: relative;
-  
 }
-main .f-groups .title::before  {
+main .f-groups .title::before {
   content: "";
   width: 100%;
   height: 1px;
   background-color: #6663633d;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 /********favorite Groups******/
 
-
-main .groups{
+main .groups {
   display: flex;
   flex-direction: column;
   padding: 0px 25px 25px 25px;
-
-  
 }
-main .groups a{
+main .groups a {
   display: block;
   display: flex;
   align-items: center;
-  padding:8px 0;
+  padding: 8px 0;
   color: var(--c6);
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2em;
   transition: color 0.3s ease;
- }
-main .groups a span{
+}
+main .groups a span {
   margin-left: 10px;
 }
 /******* section middle *****/
-main .middle .post .image{
-position: absolute;
-}
-main .middle .post .post-text{
-position: relative;
-
+main .post {
+  position: relative;
 }
 
-main .post .title::after{
+main .post .post-menu::after {
   content: "";
   width: 100%;
   height: 1px;
   background-color: #6663633d;
   position: absolute;
-  top:40px;
-  left:0;
+  top: 30px;
+  left: 0;
 }
+main .middle .post-menu {
+  display: flex;
+  justify-content: flex-start;
+}
+
+main .middle .post-menu a {
+  display: inline-block;
+  color: var(--c6);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+  padding: 0 10px;
+  cursor: pointer;
+}
+main .middle .post-menu a:hover {
+  color: rgb(97, 95, 95);
+}
+
+main .middle .post-bottom {
+  margin-top: 30px;
+  position: relative;
+}
+main .middle .post-text {
+  height: 45px;
+  width: 100%;
+  
+}
+main .middle .post-text input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--c7);
+  background-color: #dbd6d63d;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 30px 0 45px;
+  font-size: 16px;
+  color: rgb(97, 95, 95);
+}
+main .middle .post .image {
+  position: absolute;
+  top:3px;
+  left: 3px;
+}
+/********posts styling******/
+
+
+
+
+
 
 /* responsive media query starts*/
 @media (max-width: 1300px) {
