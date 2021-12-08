@@ -74,7 +74,6 @@
   top: 16px;
   color: var(--c7);
   opacity: 0.4;
-  
 }
 .navbar .menu {
   display: flex;
@@ -117,54 +116,60 @@
   display: none;
 }
 /*****main styling*********/
-main{
+main {
   background-color: var(--c7);
   padding: 30px 0;
-  
 }
-main .max-width{
+main .max-width {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  
-
 }
-main section{
-  padding: 30px 20px;
+main section {
+  padding: 30px 30px;
   border-radius: 10px;
-  background-color:var(--c5);
+  background-color: var(--c5);
   border: 1px solid var(--c7);
   box-shadow: 0px 0px 9px 0px rgba(203, 207, 205, 0.71);
-
 }
-main .left, main .right{
+main .left,
+main .right {
   width: calc(30% - 15px);
 }
-main .middle{
+main .middle {
   width: calc(40% - 15px);
-  
 }
-main section .title{
+main section .title {
   color: var(--c6);
   font-size: 2em;
   font-family: "Ubuntu", sans-serif;
 }
-main .left .menu li {
-  list-style: none;
-  
-  
+main .left .menu-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .left .menu-left a {
+  display: block;
+  color: var(--c6);
+  padding: 13px 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
 }
 
-
-
-
+main .left .menu-left a i {
+  color: var(--c4);
+  width: 20px;
+  margin-right: 15px;
+}
+main .left .menu-left a span{
+  
+}
 
 /* responsive media query starts*/
 @media (max-width: 1300px) {
- 
 }
 @media (max-width: 1104px) {
- 
 }
 @media (max-width: 991px) {
   .max-width {
@@ -205,19 +210,16 @@ main .left .menu li {
     margin: 20px 0;
     font-size: 25px;
   }
-  
+
   .max-width {
     max-width: 800px;
   }
-  
 }
 
 @media (max-width: 690px) {
   .max-width {
     padding: 0 23px;
   }
- 
 }
 @media (max-width: 500px) {
-  
 }
