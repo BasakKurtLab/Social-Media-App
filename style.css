@@ -14,6 +14,7 @@
   --c5: #ffffff; /*main bg color*/
   --c6: #bdbdbd; /*main title*/
   --c7: #fdfdfd; /*body background color*/
+  --c8: #f3f6f0; /*main a:hover*/
 }
 .max-width {
   max-width: 1400px;
@@ -83,14 +84,14 @@
   list-style: none;
   display: inline-block;
 }
-.navbar .menu li .image {
+.navbar .menu li .image, main .groups .image {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 1px solid var(--c3);
   overflow: hidden;
 }
-.navbar .menu li .image img {
+.navbar .menu li .image img, main .groups .image img {
   width: 100%;
   object-fit: cover;
 }
@@ -125,8 +126,10 @@ main .max-width {
   justify-content: space-between;
   align-items: flex-start;
 }
+main section:not(section.left) {
+  padding: 30px 25px 25px 25px;
+}
 main section {
-  padding: 30px 30px;
   border-radius: 10px;
   background-color: var(--c5);
   border: 1px solid var(--c7);
@@ -139,22 +142,30 @@ main .right {
 main .middle {
   width: calc(40% - 15px);
 }
-main section .title {
+main section .title,
+main .f-groups .title {
   color: var(--c6);
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: "Ubuntu", sans-serif;
+}
+main .left .title,
+main .f-groups .title {
+  padding: 30px 25px 25px 25px;
 }
 main .left .menu-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 30px;
 }
 main .left .menu-left a {
   display: block;
   color: var(--c6);
-  padding: 13px 0;
+
   font-family: "Ubuntu", sans-serif;
   font-size: 1em;
+  transition: color 0.3s ease;
+  padding: 12px 25px;
 }
 
 main .left .menu-left a i {
@@ -162,9 +173,55 @@ main .left .menu-left a i {
   width: 20px;
   margin-right: 15px;
 }
-main .left .menu-left a span{
+main .left .menu-left a span {
+  font-size: 1.2em;
+}
+main .left .menu-left a:hover {
+  background-color: var(--c8);
+}
+main .left .menu-left a:hover span {
+  color: rgb(97, 95, 95);
+}
+main .f-groups .title{
+  position: relative;
   
 }
+main .f-groups .title::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #6663633d;
+  position: absolute;
+  top:0;
+  left:0;
+}
+/********favorite Groups******/
+
+
+main .groups{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 25px 25px 25px;
+
+  
+}
+main .groups a{
+  display: block;
+  display: flex;
+  align-items: center;
+  padding:8px 0;
+  color: var(--c6);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+  
+  
+
+}
+main .groups a span{
+  margin-left: 10px;
+}
+
 
 /* responsive media query starts*/
 @media (max-width: 1300px) {
