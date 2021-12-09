@@ -345,8 +345,22 @@ main .posts-content .posts-image{
      object-fit: cover;
     }
 
+/*******footer*******/
 
-
+footer{
+  width: 100%;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--c1);
+  text-align: center;
+}
+footer span{
+  color:#e7f0e3;
+  font-size: 0.9em;
+}
+footer a{
+  color:#f3eaea
+}
 
 
 
