@@ -86,7 +86,8 @@
 }
 .navbar .menu li .image,
 main .groups .image,
-main .middle .post .image {
+main .middle .post .image,
+main .posts-info .image {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -95,7 +96,8 @@ main .middle .post .image {
 }
 .navbar .menu li .image img,
 main .groups .image img,
-main .middle .post .image img {
+main .middle .post .image img,
+main .posts-info .image img {
   width: 100%;
   object-fit: cover;
 }
@@ -133,11 +135,12 @@ main .max-width {
 main section:not(section.left) {
   padding: 30px 25px 25px 25px;
 }
-main section {
+main section{
   border-radius: 10px;
   background-color: var(--c5);
   border: 1px solid var(--c7);
   box-shadow: 0px 0px 9px 0px rgba(203, 207, 205, 0.71);
+  margin-bottom: 15px;
 }
 main .left,
 main .right {
@@ -274,6 +277,110 @@ main .middle .post .image {
   left: 3px;
 }
 /********posts styling******/
+
+main .posts-info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+main .posts .post-name{
+  display: flexbox;
+  flex-direction: column;
+
+}
+.posts-name .name{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3em;
+  color: rgb(56, 53, 53);
+  margin-bottom: 3px;
+  font-weight: 500;
+
+}
+.posts-name .name span{
+  font-size: 1em;
+  color: rgb(145, 140, 140);
+
+}
+.posts-name .posts-date{
+  font-size: 0.9em;
+  color: rgb(168, 162, 162);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+
+
+}
+
+
+
+
+main .posts-info .image{
+width:50px;
+height:50px;
+border: 1px solid var(--c2);
+margin-right: 15px;
+}
+main .posts-content {
+  display: flexbox;
+  justify-content: center;
+}
+main .posts-content .posts-title{
+  font-size: 1.2em;
+  color: rgb(80, 77, 77);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .posts-content .posts-image{
+  width:350px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+  main .posts-content .posts-image img{
+    width:100%;
+     object-fit: cover;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******right-top******/
+main .right-top .events-list{
+  margin-top: 20px;
+}
+
+main .right-top a
+{display: block;
+  color: var(--c6);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+  margin-bottom: 8px;
+  
+}
+main .right-top a span{
+  color:rgb(97, 95, 95);
+}
+main .right-top a i{
+  margin-right: 15px;
+}
+
 
 
 
