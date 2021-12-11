@@ -1,3 +1,29 @@
+<?php
+    
+    include("../login/connect.php");
+
+    if(empty($_COOKIE["eingeloggt"]))
+    {
+        header("Location:../login/loginPage.php");
+        exit();
+    }
+    else
+    {
+        
+        if(isset($_COOKIE["name"])) /* cookie kontrolliert*/
+
+        {
+
+            $username = $verbindung->query("SELECT * FROM users WHERE username=".$_COOKIE["name"].";")->fetch_assoc()["username"];
+
+            /* Cookie id anfrage erstellt von benutzer tabella */
+
+            
+
+            ?>
+
+
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -68,7 +94,7 @@
             <section class="middle-top">
                 <div class="post">
                     <div class="post-menu">
-                        
+                       <span><?php $username ?></span>
                         <a href="" class="menu-btn"> <span>Posts</span></a>
                     
                         <a href="" class="menu-btn"><span>Photos</span></a>
@@ -149,6 +175,12 @@
     <footer>
         <span>Created By <a href="https://github.com/BasakKurtLab">Basak Kurt</a> | <span class="far fa-copyright"></span>2021 All rights reserved</span>
     </footer>
-    
+  <?php
+        }
+    }
+    include("../login/close.php");
+
+?>
+  
 </body>
 </html>
