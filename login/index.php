@@ -1,17 +1,5 @@
-<?php
-    $eingeloggt = false;
-    $name = "";
 
-    if(isset($_COOKIE["eingeloggt"]) && $_COOKIE["eingeloggt"] == "1")
-    {
-        $eingeloggt = true;
-    }
-    if(!empty($_COOKIE["name"]))
-    {
-        $name = $_COOKIE["name"];
-    }
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
