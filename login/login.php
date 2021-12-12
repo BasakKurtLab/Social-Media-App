@@ -22,7 +22,7 @@
     {
         $account = $result->fetch_assoc();
 
-        if($account["password"] == $pass)
+        if(base64_decode($account["password"]) == $pass)
 
         {
           
@@ -31,8 +31,8 @@
             session_start();
     
             setcookie("login", "1",  time()+10000, "/");
-            setcookie("name", $account["username"],  time()+10000, "/");
-            header("Location: ../Social-Media-App/index.php");
+            setcookie("name", base64_encode($account["username"]),  time()+10000, "/");
+            header("Location: ../index.php");
 
         }
         else
