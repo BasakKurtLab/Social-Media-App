@@ -1,5 +1,22 @@
 
+<?php
+    $login = false;
+    $name = "";
 
+    if(isset($_COOKIE["login"]) && $_COOKIE["login"] == "1")
+    {
+        $login = true;
+    }
+    if(empty($_COOKIE["name"]))
+    {
+        header("Location: login/index.php");
+       
+    }
+    else{
+        
+        $name = base64_decode($_COOKIE["name"]);
+
+?>
 
 
 
@@ -73,6 +90,7 @@
             <section class="middle-top">
                 <div class="post">
                     <div class="post-menu">
+                        <?= $name ?>
                        
                         <a href="" class="menu-btn"> <span>Posts</span></a>
                     
@@ -159,3 +177,7 @@
   
 </body>
 </html>
+
+<?php
+    }
+?>
