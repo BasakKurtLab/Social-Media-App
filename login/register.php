@@ -20,8 +20,10 @@
     $username = $_POST["username"];
 
     $email = $_POST["email"];
-    $pass = $_POST["pass"];
+    $pass = base64_encode($_POST["pass"]);
     $tel = $_POST["tel"];
+
+   
 
 
 
