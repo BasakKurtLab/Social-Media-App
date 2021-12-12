@@ -14,8 +14,9 @@
     <img src="logo.png">
 </div>
 <div class="formContainer">
-    <h1>Login</h1>
+    
     <img src="user.png">
+    <h1>Login</h1>
 
     <form method="POST" action="login.php">
         <input type="email" placeholder="E-Mail-Address" name="email" required>
