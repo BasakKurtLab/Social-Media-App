@@ -30,7 +30,7 @@
                 <li><a href="" class="menu-btn"> <i class="far fa-question-circle"></i></a></li>
                 <li><a href="" class="menu-btn"> <i class="fas fa-cog"></i></a></li>
                 <li><a href="" class="menu-btn">
-                    <div class="image"><img src="../images/profil.bmp"></div></a></li>
+                    <div class="image"><img src="images/profil.bmp"></div></a></li>
                 
             </ul>
             <div class="menu-btn">
@@ -60,10 +60,10 @@
                     <div class="f-groups">
                         <div class="title">Your Favorite Groups</div>
                         <div class="groups">
-                        <a href="" class="menu-btn"> <div class="image"><img src="../images/w3.jpg"></div><span>W3 School</span></a>
-                        <a href="" class="menu-btn"> <div class="image"><img src="../images/profil.bmp"></div><span>Codepen</span></a>
-                        <a href="" class="menu-btn"> <div class="image"><img src="../images/stack.png"></div><span>Stackoverflow</span></a>
-                        <a href="" class="menu-btn"> <div class="image"><img src="../images/js.png"></div><span>Javascript Developer</span></a>
+                        <a href="" class="menu-btn"> <div class="image"><img src="images/w3.jpg"></div><span>W3 School</span></a>
+                        <a href="" class="menu-btn"> <div class="image"><img src="images/profil.bmp"></div><span>Codepen</span></a>
+                        <a href="" class="menu-btn"> <div class="image"><img src="images/stack.png"></div><span>Stackoverflow</span></a>
+                        <a href="" class="menu-btn"> <div class="image"><img src="images/js.png"></div><span>Javascript Developer</span></a>
                     </div>
                    
                 </div>
@@ -79,7 +79,7 @@
                         <a href="" class="menu-btn"><span>Photos</span></a>
                     </div>
                     <div class="post-bottom">
-                    <div class="image"><img src="../images/profil.bmp"></div>
+                    <div class="image"><img src="images/profil.bmp"></div>
                     <div class="post-text">
                         <input type="text" placeholder="Write a post...">
                     </div>
@@ -93,7 +93,7 @@
                 <div class="posts">
                     <div class="posts-info">
                         <div class="image">
-                            <img src="../images/frau.png">
+                            <img src="images/frau.png">
                         </div>
                         <div class="posts-name">
                             
@@ -110,7 +110,7 @@
                     <div class="posts-content">
                         <div class="posts-title">Travelling to Austria</div>
                         <div class="posts-image">
-                            <img src="../images/freedom.jpg">
+                            <img src="images/freedom.jpg">
                         </div>
 
                         <div class="posts-like">
