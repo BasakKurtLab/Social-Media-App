@@ -23,18 +23,23 @@
         <input type="password" placeholder="Password" name="pass" required>
         <input type="submit" value="Login">
     </form>
+    
 
     <?php
         if(isset($_GET["pwFalsch"]) && $_GET["pwFalsch"] == "1")
         {
-            echo("<span >Password is wrong</span >");
+            echo("<span class ='info' >Password or E-mail is wrong</span >");
         }
 
         if(isset($_GET["emailFalsch"]) && $_GET["emailFalsch"] == "1")
         {
-            echo("<span >E-Mail is wrong</span>");
+            echo("<span class='info'>Password or E-mail is wrong</span>");
         }
     ?>
+    <div class="bottom">
+            <a href="forgotPage.php"><h5>Forgot password?</h5></a>
+        
+            </div>
     </div>
 </body>
 </html>
