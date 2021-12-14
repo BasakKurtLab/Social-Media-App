@@ -23,10 +23,14 @@
         <input type="text" placeholder="Surname" name="surname" required>
         <input type="text" placeholder="Username" name="username" required>
         <input type="email" placeholder="E-Mail-Address" name="email" required>
-        <input type="pass" placeholder="Password" name="pass" required>
+        <input type="password" placeholder="Password" name="pass" required>
         <input type="text" placeholder="Telephone" name="tel" required>
-        <input type="submit" value="Sign in">
+        <input type="submit" value="Sign Up">
     </form>
+    <div class="bottom">
+    <a href="index.php"><h5>Already have an account?</h5></a>
+            
+    </div>
 
 
     <?php
