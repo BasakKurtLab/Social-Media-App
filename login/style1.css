@@ -34,7 +34,7 @@ a {
   font-size: 0.8em;
 }
 span {
-  color: #bdbdbd;
+  color: #1b1d1c;
   font-weight: bold;
   font-size: 0.8em;
   margin-bottom: 5px;
@@ -44,6 +44,7 @@ h1, h5 {
   text-align: center;
   font-weight: 300;
   color: rgb(43, 41, 41);
+  
   
 }
 
@@ -137,10 +138,13 @@ i {
   justify-content: flex-end;
   flex-direction: row;
 }
-span {
-  color: rgb(243, 47, 47);
+span.info {
+  color: #940b12;
   text-align: center;
   height: 20px;
+}
+h5{
+  font-size: 0.8em;
 }
 #unten {
   text-align: center;
