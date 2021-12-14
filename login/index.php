@@ -22,14 +22,7 @@
     <?php
 
 
-        //   if($eingeloggt)
-        //  {
-        //     header("Location: ../Social-Media-App/index.php");
-            
-        //     exit();
-        //  }
-        //   else
-        // {
+       
             ?>
                 
                     <img src="user.png">
@@ -42,11 +35,11 @@
                     </form>
             <div class="bottom">
             <h5>Are you new?</h5>
-            <a href="registerPage.php">Sign In</a>
+            <a href="registerPage.php">Sign Up</a>
             </div>
             
             <?php
-    // }
+
 
     ?>
     </div>
