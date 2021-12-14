@@ -45,7 +45,7 @@
             </div>
             <ul class="menu">
                 <li><a href="" class="menu-btn"> <i class="far fa-question-circle"></i></a></li>
-                <li><a href="" class="menu-btn"> <i class="fas fa-cog"></i></a></li>
+                <li><a href="login/formUpdate.php" class="menu-btn"> <i class="fas fa-cog"></i></a></li>
                 <li><a href="" class="menu-btn">
                     <div class="image"><img src="images/profil.bmp"></div></a></li>
                 
